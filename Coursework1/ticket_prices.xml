@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TicketRate>
+	<ChildBaseRate>100.00</ChildBaseRate>
+	<AdultBaseRate>200.00</AdultBaseRate>
+	<TwoHourMultiplier>1.80</TwoHourMultiplier>
+	<ThreeHourMultiplier>2.50</ThreeHourMultiplier>
+	<UnlimitedMultiplier>10.00</UnlimitedMultiplier>
+	<GroupFiveMultiplier>0.85</GroupFiveMultiplier>
+	<GroupTenMultiplier>0.75</GroupTenMultiplier>
+	<WeekDayMultiplier>0.75</WeekDayMultiplier>
+	<WeekendMultiplier>1.1</WeekendMultiplier>
+</TicketRate>

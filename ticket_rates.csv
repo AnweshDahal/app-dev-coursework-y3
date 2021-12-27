@@ -1,0 +1,8 @@
+category, rate
+child_base, 100
+adult_base, 200
+time, 1.9
+unlimited, 10
+group, 1.85
+week_day, 1.25
+holiday, 1.5
