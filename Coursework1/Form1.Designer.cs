@@ -68,7 +68,72 @@ namespace Coursework1
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.importTicketRatesBTN = new System.Windows.Forms.Button();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.TotalListBox = new System.Windows.Forms.ListBox();
+            this.saveCustomerBTN = new System.Windows.Forms.Button();
+            this.checkNumberBTN = new System.Windows.Forms.Button();
+            this.dataImportedStatusLBL = new System.Windows.Forms.Label();
+            this.importVisitorPB = new System.Windows.Forms.ProgressBar();
+            this.ImportBTN = new System.Windows.Forms.Button();
+            this.isHolidayCBox = new System.Windows.Forms.CheckBox();
+            this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.numberOfAdultsTB = new System.Windows.Forms.TextBox();
+            this.numberOfChildrenTB = new System.Windows.Forms.TextBox();
+            this.visitorIDTB = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.hoursCB = new System.Windows.Forms.ComboBox();
+            this.groupNumberCB = new System.Windows.Forms.ComboBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.TotalLBL = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.totalGroupOfTenLBL = new System.Windows.Forms.Label();
+            this.totalGroupOfFiveLBL = new System.Windows.Forms.Label();
+            this.totalAdultLBL = new System.Windows.Forms.Label();
+            this.totalChildrenLBL = new System.Windows.Forms.Label();
+            this.totalEarningLBL = new System.Windows.Forms.Label();
+            this.totalUnlimitedVisits = new System.Windows.Forms.Label();
+            this.totalHoursLBL = new System.Windows.Forms.Label();
+            this.totalVisitorLBL = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
+            this.todayDateLBL = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.generateDailyReportBTN = new System.Windows.Forms.Button();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.label47 = new System.Windows.Forms.Label();
+            this.sortByVisitorsBTN = new System.Windows.Forms.Button();
+            this.sortByEarningBTN = new System.Windows.Forms.Button();
+            this.generateWeeklyReportBTN = new System.Windows.Forms.Button();
+            this.weeklyReportTable = new System.Windows.Forms.DataGridView();
+            this.day = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.earning = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.visitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.updateTicketRatesTab = new System.Windows.Forms.TabPage();
+            this.ticketRateModifyBarrier = new System.Windows.Forms.Panel();
+            this.label51 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.loginBTN = new System.Windows.Forms.Button();
+            this.passwordTB = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.usernameTB = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.adminImportBtn = new System.Windows.Forms.Button();
             this.saveTicketRatesBTN = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.holidayMultiplierTB = new System.Windows.Forms.TextBox();
             this.weekdayMultiplierTB = new System.Windows.Forms.TextBox();
             this.groupOfTenMultiplierTB = new System.Windows.Forms.TextBox();
@@ -86,36 +151,18 @@ namespace Coursework1
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.visitorIDTB = new System.Windows.Forms.TextBox();
-            this.label32 = new System.Windows.Forms.Label();
-            this.numberOfChildrenTB = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.numberOfAdultsTB = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.hoursCB = new System.Windows.Forms.ComboBox();
-            this.label35 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.isHolidayCBox = new System.Windows.Forms.CheckBox();
-            this.label36 = new System.Windows.Forms.Label();
-            this.calcTotalBTN = new System.Windows.Forms.Button();
-            this.label37 = new System.Windows.Forms.Label();
-            this.TotalLBL = new System.Windows.Forms.Label();
-            this.ImportBTN = new System.Windows.Forms.Button();
-            this.importVisitorPB = new System.Windows.Forms.ProgressBar();
-            this.dataImportedStatusLBL = new System.Windows.Forms.Label();
             this.MainTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.rates.SuspendLayout();
             this.tabPage3.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.weeklyReportTable)).BeginInit();
+            this.updateTicketRatesTab.SuspendLayout();
+            this.ticketRateModifyBarrier.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // MainTabs
@@ -123,6 +170,8 @@ namespace Coursework1
             this.MainTabs.Controls.Add(this.tabPage1);
             this.MainTabs.Controls.Add(this.tabPage3);
             this.MainTabs.Controls.Add(this.tabPage2);
+            this.MainTabs.Controls.Add(this.tabPage4);
+            this.MainTabs.Controls.Add(this.updateTicketRatesTab);
             this.MainTabs.Location = new System.Drawing.Point(12, 15);
             this.MainTabs.Name = "MainTabs";
             this.MainTabs.SelectedIndex = 0;
@@ -133,27 +182,6 @@ namespace Coursework1
             // 
             this.tabPage1.Controls.Add(this.rates);
             this.tabPage1.Controls.Add(this.importTicketRatesBTN);
-            this.tabPage1.Controls.Add(this.saveTicketRatesBTN);
-            this.tabPage1.Controls.Add(this.holidayMultiplierTB);
-            this.tabPage1.Controls.Add(this.weekdayMultiplierTB);
-            this.tabPage1.Controls.Add(this.groupOfTenMultiplierTB);
-            this.tabPage1.Controls.Add(this.groupOfFiveMultiplierTB);
-            this.tabPage1.Controls.Add(this.unlimitedMultiplierTB);
-            this.tabPage1.Controls.Add(this.threeHoursMultiplierTB);
-            this.tabPage1.Controls.Add(this.twoHoursMultiplierTB);
-            this.tabPage1.Controls.Add(this.adultBaseTicketTB);
-            this.tabPage1.Controls.Add(this.childBaseTicketTB);
-            this.tabPage1.Controls.Add(this.label9);
-            this.tabPage1.Controls.Add(this.label22);
-            this.tabPage1.Controls.Add(this.label8);
-            this.tabPage1.Controls.Add(this.label7);
-            this.tabPage1.Controls.Add(this.label19);
-            this.tabPage1.Controls.Add(this.label6);
-            this.tabPage1.Controls.Add(this.label5);
-            this.tabPage1.Controls.Add(this.label3);
-            this.tabPage1.Controls.Add(this.label4);
-            this.tabPage1.Controls.Add(this.label2);
-            this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
@@ -544,196 +572,24 @@ namespace Coursework1
             // 
             // importTicketRatesBTN
             // 
-            this.importTicketRatesBTN.Location = new System.Drawing.Point(76, 399);
+            this.importTicketRatesBTN.Location = new System.Drawing.Point(6, 7);
             this.importTicketRatesBTN.Name = "importTicketRatesBTN";
-            this.importTicketRatesBTN.Size = new System.Drawing.Size(100, 23);
+            this.importTicketRatesBTN.Size = new System.Drawing.Size(192, 43);
             this.importTicketRatesBTN.TabIndex = 3;
             this.importTicketRatesBTN.Text = "Import";
             this.importTicketRatesBTN.UseVisualStyleBackColor = true;
             this.importTicketRatesBTN.Click += new System.EventHandler(this.importTicketRatesBTN_Click);
             // 
-            // saveTicketRatesBTN
-            // 
-            this.saveTicketRatesBTN.Location = new System.Drawing.Point(76, 428);
-            this.saveTicketRatesBTN.Name = "saveTicketRatesBTN";
-            this.saveTicketRatesBTN.Size = new System.Drawing.Size(100, 23);
-            this.saveTicketRatesBTN.TabIndex = 3;
-            this.saveTicketRatesBTN.Text = "Save";
-            this.saveTicketRatesBTN.UseVisualStyleBackColor = true;
-            this.saveTicketRatesBTN.Click += new System.EventHandler(this.saveTicketRatesBTN_Click);
-            // 
-            // holidayMultiplierTB
-            // 
-            this.holidayMultiplierTB.Location = new System.Drawing.Point(76, 329);
-            this.holidayMultiplierTB.Name = "holidayMultiplierTB";
-            this.holidayMultiplierTB.Size = new System.Drawing.Size(100, 20);
-            this.holidayMultiplierTB.TabIndex = 2;
-            // 
-            // weekdayMultiplierTB
-            // 
-            this.weekdayMultiplierTB.Location = new System.Drawing.Point(76, 292);
-            this.weekdayMultiplierTB.Name = "weekdayMultiplierTB";
-            this.weekdayMultiplierTB.Size = new System.Drawing.Size(100, 20);
-            this.weekdayMultiplierTB.TabIndex = 2;
-            // 
-            // groupOfTenMultiplierTB
-            // 
-            this.groupOfTenMultiplierTB.Location = new System.Drawing.Point(76, 258);
-            this.groupOfTenMultiplierTB.Name = "groupOfTenMultiplierTB";
-            this.groupOfTenMultiplierTB.Size = new System.Drawing.Size(100, 20);
-            this.groupOfTenMultiplierTB.TabIndex = 2;
-            // 
-            // groupOfFiveMultiplierTB
-            // 
-            this.groupOfFiveMultiplierTB.Location = new System.Drawing.Point(76, 230);
-            this.groupOfFiveMultiplierTB.Name = "groupOfFiveMultiplierTB";
-            this.groupOfFiveMultiplierTB.Size = new System.Drawing.Size(100, 20);
-            this.groupOfFiveMultiplierTB.TabIndex = 2;
-            // 
-            // unlimitedMultiplierTB
-            // 
-            this.unlimitedMultiplierTB.Location = new System.Drawing.Point(76, 197);
-            this.unlimitedMultiplierTB.Name = "unlimitedMultiplierTB";
-            this.unlimitedMultiplierTB.Size = new System.Drawing.Size(100, 20);
-            this.unlimitedMultiplierTB.TabIndex = 2;
-            // 
-            // threeHoursMultiplierTB
-            // 
-            this.threeHoursMultiplierTB.Location = new System.Drawing.Point(76, 166);
-            this.threeHoursMultiplierTB.Name = "threeHoursMultiplierTB";
-            this.threeHoursMultiplierTB.Size = new System.Drawing.Size(100, 20);
-            this.threeHoursMultiplierTB.TabIndex = 2;
-            // 
-            // twoHoursMultiplierTB
-            // 
-            this.twoHoursMultiplierTB.Location = new System.Drawing.Point(76, 134);
-            this.twoHoursMultiplierTB.Name = "twoHoursMultiplierTB";
-            this.twoHoursMultiplierTB.Size = new System.Drawing.Size(100, 20);
-            this.twoHoursMultiplierTB.TabIndex = 2;
-            // 
-            // adultBaseTicketTB
-            // 
-            this.adultBaseTicketTB.Location = new System.Drawing.Point(76, 65);
-            this.adultBaseTicketTB.Name = "adultBaseTicketTB";
-            this.adultBaseTicketTB.Size = new System.Drawing.Size(100, 20);
-            this.adultBaseTicketTB.TabIndex = 2;
-            // 
-            // childBaseTicketTB
-            // 
-            this.childBaseTicketTB.Location = new System.Drawing.Point(76, 30);
-            this.childBaseTicketTB.Name = "childBaseTicketTB";
-            this.childBaseTicketTB.Size = new System.Drawing.Size(100, 20);
-            this.childBaseTicketTB.TabIndex = 2;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 329);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(42, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Holiday";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 258);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(63, 13);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "Group of 10";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 292);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(58, 13);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Week Day";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 230);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(57, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Group of 5";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(6, 166);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(66, 13);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "Three Hours";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 197);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(50, 13);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Unlimited";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 134);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(59, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Two Hours";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 65);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Adult > 12";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 102);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Multipliers";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 3);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(140, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Base Ticket Rates";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Child (5 -12)";
-            // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.TotalListBox);
+            this.tabPage3.Controls.Add(this.saveCustomerBTN);
+            this.tabPage3.Controls.Add(this.checkNumberBTN);
             this.tabPage3.Controls.Add(this.dataImportedStatusLBL);
             this.tabPage3.Controls.Add(this.importVisitorPB);
             this.tabPage3.Controls.Add(this.ImportBTN);
-            this.tabPage3.Controls.Add(this.calcTotalBTN);
             this.tabPage3.Controls.Add(this.isHolidayCBox);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
+            this.tabPage3.Controls.Add(this.dateTimePicker);
             this.tabPage3.Controls.Add(this.label37);
             this.tabPage3.Controls.Add(this.label36);
             this.tabPage3.Controls.Add(this.label35);
@@ -743,7 +599,7 @@ namespace Coursework1
             this.tabPage3.Controls.Add(this.visitorIDTB);
             this.tabPage3.Controls.Add(this.label33);
             this.tabPage3.Controls.Add(this.hoursCB);
-            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.groupNumberCB);
             this.tabPage3.Controls.Add(this.label32);
             this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Controls.Add(this.label23);
@@ -757,198 +613,35 @@ namespace Coursework1
             this.tabPage3.Text = "Ticketing";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
+            // TotalListBox
             // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(768, 486);
-            this.tabPage2.TabIndex = 3;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            this.TotalListBox.FormattingEnabled = true;
+            this.TotalListBox.Location = new System.Drawing.Point(565, 118);
+            this.TotalListBox.Name = "TotalListBox";
+            this.TotalListBox.Size = new System.Drawing.Size(177, 355);
+            this.TotalListBox.TabIndex = 11;
             // 
-            // label20
+            // saveCustomerBTN
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(7, 7);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(95, 17);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "Add Visitors";
+            this.saveCustomerBTN.Enabled = false;
+            this.saveCustomerBTN.Location = new System.Drawing.Point(132, 338);
+            this.saveCustomerBTN.Name = "saveCustomerBTN";
+            this.saveCustomerBTN.Size = new System.Drawing.Size(179, 23);
+            this.saveCustomerBTN.TabIndex = 10;
+            this.saveCustomerBTN.Text = "Save";
+            this.saveCustomerBTN.UseVisualStyleBackColor = true;
+            this.saveCustomerBTN.Click += new System.EventHandler(this.saveCustomerBTN_Click);
             // 
-            // label23
+            // checkNumberBTN
             // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(8, 38);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(49, 13);
-            this.label23.TabIndex = 1;
-            this.label23.Text = "Visitor ID";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(7, 76);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(107, 13);
-            this.label29.TabIndex = 1;
-            this.label29.Text = "Visitor Group Number";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "5",
-            "10"});
-            this.comboBox1.Location = new System.Drawing.Point(132, 73);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(180, 21);
-            this.comboBox1.TabIndex = 2;
-            this.comboBox1.Text = "-- Select One --";
-            // 
-            // visitorIDTB
-            // 
-            this.visitorIDTB.Location = new System.Drawing.Point(132, 38);
-            this.visitorIDTB.Name = "visitorIDTB";
-            this.visitorIDTB.Size = new System.Drawing.Size(180, 20);
-            this.visitorIDTB.TabIndex = 3;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(7, 118);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(99, 13);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "Number Of Children";
-            // 
-            // numberOfChildrenTB
-            // 
-            this.numberOfChildrenTB.Location = new System.Drawing.Point(132, 115);
-            this.numberOfChildrenTB.Name = "numberOfChildrenTB";
-            this.numberOfChildrenTB.Size = new System.Drawing.Size(180, 20);
-            this.numberOfChildrenTB.TabIndex = 3;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(7, 154);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(90, 13);
-            this.label33.TabIndex = 1;
-            this.label33.Text = "Number Of Adults";
-            // 
-            // numberOfAdultsTB
-            // 
-            this.numberOfAdultsTB.Location = new System.Drawing.Point(132, 151);
-            this.numberOfAdultsTB.Name = "numberOfAdultsTB";
-            this.numberOfAdultsTB.Size = new System.Drawing.Size(180, 20);
-            this.numberOfAdultsTB.TabIndex = 3;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(8, 190);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(35, 13);
-            this.label34.TabIndex = 1;
-            this.label34.Text = "Hours";
-            // 
-            // hoursCB
-            // 
-            this.hoursCB.FormattingEnabled = true;
-            this.hoursCB.Items.AddRange(new object[] {
-            "2",
-            "3",
-            "UNLIMITED"});
-            this.hoursCB.Location = new System.Drawing.Point(132, 187);
-            this.hoursCB.Name = "hoursCB";
-            this.hoursCB.Size = new System.Drawing.Size(180, 21);
-            this.hoursCB.TabIndex = 2;
-            this.hoursCB.Text = "-- Select Hours --";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(8, 224);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(52, 13);
-            this.label35.TabIndex = 1;
-            this.label35.Text = "Visit Date";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(132, 224);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(180, 20);
-            this.dateTimePicker1.TabIndex = 4;
-            // 
-            // isHolidayCBox
-            // 
-            this.isHolidayCBox.AutoSize = true;
-            this.isHolidayCBox.Location = new System.Drawing.Point(132, 261);
-            this.isHolidayCBox.Name = "isHolidayCBox";
-            this.isHolidayCBox.Size = new System.Drawing.Size(72, 17);
-            this.isHolidayCBox.TabIndex = 5;
-            this.isHolidayCBox.Text = "Is Holiday";
-            this.isHolidayCBox.UseVisualStyleBackColor = true;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(8, 262);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(32, 13);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "Misc.";
-            // 
-            // calcTotalBTN
-            // 
-            this.calcTotalBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.calcTotalBTN.Location = new System.Drawing.Point(132, 294);
-            this.calcTotalBTN.Name = "calcTotalBTN";
-            this.calcTotalBTN.Size = new System.Drawing.Size(180, 34);
-            this.calcTotalBTN.TabIndex = 6;
-            this.calcTotalBTN.Text = "Calculate Total";
-            this.calcTotalBTN.UseVisualStyleBackColor = true;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(8, 355);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(56, 13);
-            this.label37.TabIndex = 1;
-            this.label37.Text = "Total (Rs.)";
-            // 
-            // TotalLBL
-            // 
-            this.TotalLBL.AutoSize = true;
-            this.TotalLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLBL.Location = new System.Drawing.Point(129, 351);
-            this.TotalLBL.Name = "TotalLBL";
-            this.TotalLBL.Size = new System.Drawing.Size(49, 24);
-            this.TotalLBL.TabIndex = 0;
-            this.TotalLBL.Text = "0.00";
-            // 
-            // ImportBTN
-            // 
-            this.ImportBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ImportBTN.Location = new System.Drawing.Point(562, 29);
-            this.ImportBTN.Name = "ImportBTN";
-            this.ImportBTN.Size = new System.Drawing.Size(180, 34);
-            this.ImportBTN.TabIndex = 6;
-            this.ImportBTN.Text = "Import Data";
-            this.ImportBTN.UseVisualStyleBackColor = true;
-            this.ImportBTN.Click += new System.EventHandler(this.ImportBTN_Click);
-            // 
-            // importVisitorPB
-            // 
-            this.importVisitorPB.Location = new System.Drawing.Point(562, 70);
-            this.importVisitorPB.Name = "importVisitorPB";
-            this.importVisitorPB.Size = new System.Drawing.Size(180, 10);
-            this.importVisitorPB.TabIndex = 7;
+            this.checkNumberBTN.Enabled = false;
+            this.checkNumberBTN.Location = new System.Drawing.Point(51, 338);
+            this.checkNumberBTN.Name = "checkNumberBTN";
+            this.checkNumberBTN.Size = new System.Drawing.Size(75, 23);
+            this.checkNumberBTN.TabIndex = 9;
+            this.checkNumberBTN.Text = "Check";
+            this.checkNumberBTN.UseVisualStyleBackColor = true;
+            this.checkNumberBTN.Click += new System.EventHandler(this.checkNumberBTN_Click);
             // 
             // dataImportedStatusLBL
             // 
@@ -960,6 +653,792 @@ namespace Coursework1
             this.dataImportedStatusLBL.TabIndex = 8;
             this.dataImportedStatusLBL.Text = "No Data Imported";
             // 
+            // importVisitorPB
+            // 
+            this.importVisitorPB.Location = new System.Drawing.Point(562, 70);
+            this.importVisitorPB.Name = "importVisitorPB";
+            this.importVisitorPB.Size = new System.Drawing.Size(180, 10);
+            this.importVisitorPB.TabIndex = 7;
+            // 
+            // ImportBTN
+            // 
+            this.ImportBTN.Enabled = false;
+            this.ImportBTN.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ImportBTN.Location = new System.Drawing.Point(562, 29);
+            this.ImportBTN.Name = "ImportBTN";
+            this.ImportBTN.Size = new System.Drawing.Size(180, 34);
+            this.ImportBTN.TabIndex = 6;
+            this.ImportBTN.Text = "Import Data";
+            this.ImportBTN.UseVisualStyleBackColor = true;
+            this.ImportBTN.Click += new System.EventHandler(this.ImportBTN_Click);
+            // 
+            // isHolidayCBox
+            // 
+            this.isHolidayCBox.AutoSize = true;
+            this.isHolidayCBox.Enabled = false;
+            this.isHolidayCBox.Location = new System.Drawing.Point(132, 261);
+            this.isHolidayCBox.Name = "isHolidayCBox";
+            this.isHolidayCBox.Size = new System.Drawing.Size(72, 17);
+            this.isHolidayCBox.TabIndex = 5;
+            this.isHolidayCBox.Text = "Is Holiday";
+            this.isHolidayCBox.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker
+            // 
+            this.dateTimePicker.Enabled = false;
+            this.dateTimePicker.Location = new System.Drawing.Point(132, 224);
+            this.dateTimePicker.Name = "dateTimePicker";
+            this.dateTimePicker.Size = new System.Drawing.Size(180, 20);
+            this.dateTimePicker.TabIndex = 4;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(7, 297);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(56, 13);
+            this.label37.TabIndex = 1;
+            this.label37.Text = "Total (Rs.)";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(8, 262);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(32, 13);
+            this.label36.TabIndex = 1;
+            this.label36.Text = "Misc.";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(8, 224);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(52, 13);
+            this.label35.TabIndex = 1;
+            this.label35.Text = "Visit Date";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(8, 190);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(35, 13);
+            this.label34.TabIndex = 1;
+            this.label34.Text = "Hours";
+            // 
+            // numberOfAdultsTB
+            // 
+            this.numberOfAdultsTB.Enabled = false;
+            this.numberOfAdultsTB.Location = new System.Drawing.Point(132, 151);
+            this.numberOfAdultsTB.Name = "numberOfAdultsTB";
+            this.numberOfAdultsTB.Size = new System.Drawing.Size(180, 20);
+            this.numberOfAdultsTB.TabIndex = 3;
+            // 
+            // numberOfChildrenTB
+            // 
+            this.numberOfChildrenTB.Enabled = false;
+            this.numberOfChildrenTB.Location = new System.Drawing.Point(132, 115);
+            this.numberOfChildrenTB.Name = "numberOfChildrenTB";
+            this.numberOfChildrenTB.Size = new System.Drawing.Size(180, 20);
+            this.numberOfChildrenTB.TabIndex = 3;
+            // 
+            // visitorIDTB
+            // 
+            this.visitorIDTB.Enabled = false;
+            this.visitorIDTB.Location = new System.Drawing.Point(132, 38);
+            this.visitorIDTB.Name = "visitorIDTB";
+            this.visitorIDTB.Size = new System.Drawing.Size(180, 20);
+            this.visitorIDTB.TabIndex = 3;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(7, 154);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(90, 13);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "Number Of Adults";
+            // 
+            // hoursCB
+            // 
+            this.hoursCB.Enabled = false;
+            this.hoursCB.FormattingEnabled = true;
+            this.hoursCB.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "UNLIMITED"});
+            this.hoursCB.Location = new System.Drawing.Point(132, 187);
+            this.hoursCB.Name = "hoursCB";
+            this.hoursCB.Size = new System.Drawing.Size(180, 21);
+            this.hoursCB.TabIndex = 2;
+            this.hoursCB.Text = "-- Select One --";
+            // 
+            // groupNumberCB
+            // 
+            this.groupNumberCB.Enabled = false;
+            this.groupNumberCB.FormattingEnabled = true;
+            this.groupNumberCB.Items.AddRange(new object[] {
+            "5",
+            "10"});
+            this.groupNumberCB.Location = new System.Drawing.Point(132, 73);
+            this.groupNumberCB.Name = "groupNumberCB";
+            this.groupNumberCB.Size = new System.Drawing.Size(180, 21);
+            this.groupNumberCB.TabIndex = 2;
+            this.groupNumberCB.Text = "-- Select One --";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(7, 118);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(99, 13);
+            this.label32.TabIndex = 1;
+            this.label32.Text = "Number Of Children";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(7, 76);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(107, 13);
+            this.label29.TabIndex = 1;
+            this.label29.Text = "Visitor Group Number";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(8, 38);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(49, 13);
+            this.label23.TabIndex = 1;
+            this.label23.Text = "Visitor ID";
+            // 
+            // TotalLBL
+            // 
+            this.TotalLBL.AutoSize = true;
+            this.TotalLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TotalLBL.Location = new System.Drawing.Point(128, 293);
+            this.TotalLBL.Name = "TotalLBL";
+            this.TotalLBL.Size = new System.Drawing.Size(49, 24);
+            this.TotalLBL.TabIndex = 0;
+            this.TotalLBL.Text = "0.00";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Location = new System.Drawing.Point(7, 7);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(95, 17);
+            this.label20.TabIndex = 0;
+            this.label20.Text = "Add Visitors";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label46);
+            this.tabPage2.Controls.Add(this.label45);
+            this.tabPage2.Controls.Add(this.label44);
+            this.tabPage2.Controls.Add(this.label43);
+            this.tabPage2.Controls.Add(this.label42);
+            this.tabPage2.Controls.Add(this.label41);
+            this.tabPage2.Controls.Add(this.label40);
+            this.tabPage2.Controls.Add(this.totalGroupOfTenLBL);
+            this.tabPage2.Controls.Add(this.totalGroupOfFiveLBL);
+            this.tabPage2.Controls.Add(this.totalAdultLBL);
+            this.tabPage2.Controls.Add(this.totalChildrenLBL);
+            this.tabPage2.Controls.Add(this.totalEarningLBL);
+            this.tabPage2.Controls.Add(this.totalUnlimitedVisits);
+            this.tabPage2.Controls.Add(this.totalHoursLBL);
+            this.tabPage2.Controls.Add(this.totalVisitorLBL);
+            this.tabPage2.Controls.Add(this.label39);
+            this.tabPage2.Controls.Add(this.todayDateLBL);
+            this.tabPage2.Controls.Add(this.label38);
+            this.tabPage2.Controls.Add(this.generateDailyReportBTN);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(768, 486);
+            this.tabPage2.TabIndex = 3;
+            this.tabPage2.Text = "Daily Report";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(7, 121);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(104, 13);
+            this.label46.TabIndex = 2;
+            this.label46.Text = "Total Unlimited Visits";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(7, 252);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(90, 13);
+            this.label45.TabIndex = 2;
+            this.label45.Text = "Total Group of 10";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(7, 225);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(84, 13);
+            this.label44.TabIndex = 2;
+            this.label44.Text = "Total Group of 5";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(7, 199);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(58, 13);
+            this.label43.TabIndex = 2;
+            this.label43.Text = "Total Adult";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(7, 175);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(72, 13);
+            this.label42.TabIndex = 2;
+            this.label42.Text = "Total Children";
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(7, 148);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(95, 13);
+            this.label41.TabIndex = 2;
+            this.label41.Text = "Total Earning (Rs.)";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(7, 97);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(125, 13);
+            this.label40.TabIndex = 2;
+            this.label40.Text = "Total Time Spent (Hours)";
+            // 
+            // totalGroupOfTenLBL
+            // 
+            this.totalGroupOfTenLBL.AutoSize = true;
+            this.totalGroupOfTenLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalGroupOfTenLBL.Location = new System.Drawing.Point(149, 252);
+            this.totalGroupOfTenLBL.Name = "totalGroupOfTenLBL";
+            this.totalGroupOfTenLBL.Size = new System.Drawing.Size(21, 13);
+            this.totalGroupOfTenLBL.TabIndex = 2;
+            this.totalGroupOfTenLBL.Text = "00";
+            // 
+            // totalGroupOfFiveLBL
+            // 
+            this.totalGroupOfFiveLBL.AutoSize = true;
+            this.totalGroupOfFiveLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalGroupOfFiveLBL.Location = new System.Drawing.Point(149, 225);
+            this.totalGroupOfFiveLBL.Name = "totalGroupOfFiveLBL";
+            this.totalGroupOfFiveLBL.Size = new System.Drawing.Size(21, 13);
+            this.totalGroupOfFiveLBL.TabIndex = 2;
+            this.totalGroupOfFiveLBL.Text = "00";
+            // 
+            // totalAdultLBL
+            // 
+            this.totalAdultLBL.AutoSize = true;
+            this.totalAdultLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalAdultLBL.Location = new System.Drawing.Point(149, 199);
+            this.totalAdultLBL.Name = "totalAdultLBL";
+            this.totalAdultLBL.Size = new System.Drawing.Size(21, 13);
+            this.totalAdultLBL.TabIndex = 2;
+            this.totalAdultLBL.Text = "00";
+            // 
+            // totalChildrenLBL
+            // 
+            this.totalChildrenLBL.AutoSize = true;
+            this.totalChildrenLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalChildrenLBL.Location = new System.Drawing.Point(149, 175);
+            this.totalChildrenLBL.Name = "totalChildrenLBL";
+            this.totalChildrenLBL.Size = new System.Drawing.Size(21, 13);
+            this.totalChildrenLBL.TabIndex = 2;
+            this.totalChildrenLBL.Text = "00";
+            // 
+            // totalEarningLBL
+            // 
+            this.totalEarningLBL.AutoSize = true;
+            this.totalEarningLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalEarningLBL.Location = new System.Drawing.Point(149, 148);
+            this.totalEarningLBL.Name = "totalEarningLBL";
+            this.totalEarningLBL.Size = new System.Drawing.Size(62, 13);
+            this.totalEarningLBL.TabIndex = 2;
+            this.totalEarningLBL.Text = "Rs. 00.00";
+            // 
+            // totalUnlimitedVisits
+            // 
+            this.totalUnlimitedVisits.AutoSize = true;
+            this.totalUnlimitedVisits.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalUnlimitedVisits.Location = new System.Drawing.Point(149, 121);
+            this.totalUnlimitedVisits.Name = "totalUnlimitedVisits";
+            this.totalUnlimitedVisits.Size = new System.Drawing.Size(21, 13);
+            this.totalUnlimitedVisits.TabIndex = 2;
+            this.totalUnlimitedVisits.Text = "00";
+            // 
+            // totalHoursLBL
+            // 
+            this.totalHoursLBL.AutoSize = true;
+            this.totalHoursLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalHoursLBL.Location = new System.Drawing.Point(149, 97);
+            this.totalHoursLBL.Name = "totalHoursLBL";
+            this.totalHoursLBL.Size = new System.Drawing.Size(44, 13);
+            this.totalHoursLBL.TabIndex = 2;
+            this.totalHoursLBL.Text = "00 Hrs";
+            // 
+            // totalVisitorLBL
+            // 
+            this.totalVisitorLBL.AutoSize = true;
+            this.totalVisitorLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalVisitorLBL.Location = new System.Drawing.Point(149, 70);
+            this.totalVisitorLBL.Name = "totalVisitorLBL";
+            this.totalVisitorLBL.Size = new System.Drawing.Size(21, 13);
+            this.totalVisitorLBL.TabIndex = 2;
+            this.totalVisitorLBL.Text = "00";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(7, 70);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(67, 13);
+            this.label39.TabIndex = 2;
+            this.label39.Text = "Total Visitors";
+            // 
+            // todayDateLBL
+            // 
+            this.todayDateLBL.AutoSize = true;
+            this.todayDateLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.todayDateLBL.Location = new System.Drawing.Point(74, 37);
+            this.todayDateLBL.Name = "todayDateLBL";
+            this.todayDateLBL.Size = new System.Drawing.Size(79, 15);
+            this.todayDateLBL.TabIndex = 1;
+            this.todayDateLBL.Text = "2021/12/28";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(7, 37);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(61, 15);
+            this.label38.TabIndex = 1;
+            this.label38.Text = "Report for";
+            // 
+            // generateDailyReportBTN
+            // 
+            this.generateDailyReportBTN.Location = new System.Drawing.Point(7, 7);
+            this.generateDailyReportBTN.Name = "generateDailyReportBTN";
+            this.generateDailyReportBTN.Size = new System.Drawing.Size(75, 23);
+            this.generateDailyReportBTN.TabIndex = 0;
+            this.generateDailyReportBTN.Text = "Generate";
+            this.generateDailyReportBTN.UseVisualStyleBackColor = true;
+            this.generateDailyReportBTN.Click += new System.EventHandler(this.generateDailyReportBTN_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.label47);
+            this.tabPage4.Controls.Add(this.sortByVisitorsBTN);
+            this.tabPage4.Controls.Add(this.sortByEarningBTN);
+            this.tabPage4.Controls.Add(this.generateWeeklyReportBTN);
+            this.tabPage4.Controls.Add(this.weeklyReportTable);
+            this.tabPage4.Location = new System.Drawing.Point(4, 22);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(768, 486);
+            this.tabPage4.TabIndex = 4;
+            this.tabPage4.Text = "Weekly Report";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold);
+            this.label47.Location = new System.Drawing.Point(7, 7);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(168, 26);
+            this.label47.TabIndex = 2;
+            this.label47.Text = "Weekly Report";
+            // 
+            // sortByVisitorsBTN
+            // 
+            this.sortByVisitorsBTN.Location = new System.Drawing.Point(372, 103);
+            this.sortByVisitorsBTN.Name = "sortByVisitorsBTN";
+            this.sortByVisitorsBTN.Size = new System.Drawing.Size(167, 23);
+            this.sortByVisitorsBTN.TabIndex = 1;
+            this.sortByVisitorsBTN.Text = "Sort By Visitors";
+            this.sortByVisitorsBTN.UseVisualStyleBackColor = true;
+            this.sortByVisitorsBTN.Click += new System.EventHandler(this.sortByVisitorsBTN_Click);
+            // 
+            // sortByEarningBTN
+            // 
+            this.sortByEarningBTN.Location = new System.Drawing.Point(372, 74);
+            this.sortByEarningBTN.Name = "sortByEarningBTN";
+            this.sortByEarningBTN.Size = new System.Drawing.Size(167, 23);
+            this.sortByEarningBTN.TabIndex = 1;
+            this.sortByEarningBTN.Text = "Sort By Earning";
+            this.sortByEarningBTN.UseVisualStyleBackColor = true;
+            this.sortByEarningBTN.Click += new System.EventHandler(this.sortByEarningBTN_Click);
+            // 
+            // generateWeeklyReportBTN
+            // 
+            this.generateWeeklyReportBTN.Location = new System.Drawing.Point(12, 45);
+            this.generateWeeklyReportBTN.Name = "generateWeeklyReportBTN";
+            this.generateWeeklyReportBTN.Size = new System.Drawing.Size(167, 23);
+            this.generateWeeklyReportBTN.TabIndex = 1;
+            this.generateWeeklyReportBTN.Text = "Generate Report For The Week";
+            this.generateWeeklyReportBTN.UseVisualStyleBackColor = true;
+            this.generateWeeklyReportBTN.Click += new System.EventHandler(this.generateWeeklyReportBTN_Click);
+            // 
+            // weeklyReportTable
+            // 
+            this.weeklyReportTable.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.Raised;
+            this.weeklyReportTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.weeklyReportTable.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.day,
+            this.earning,
+            this.visitor});
+            this.weeklyReportTable.Location = new System.Drawing.Point(12, 74);
+            this.weeklyReportTable.Name = "weeklyReportTable";
+            this.weeklyReportTable.Size = new System.Drawing.Size(345, 254);
+            this.weeklyReportTable.TabIndex = 0;
+            // 
+            // day
+            // 
+            this.day.HeaderText = "Day";
+            this.day.Name = "day";
+            // 
+            // earning
+            // 
+            this.earning.HeaderText = "Earning";
+            this.earning.Name = "earning";
+            // 
+            // visitor
+            // 
+            this.visitor.HeaderText = "Visitors";
+            this.visitor.Name = "visitor";
+            // 
+            // updateTicketRatesTab
+            // 
+            this.updateTicketRatesTab.Controls.Add(this.ticketRateModifyBarrier);
+            this.updateTicketRatesTab.Controls.Add(this.adminImportBtn);
+            this.updateTicketRatesTab.Controls.Add(this.saveTicketRatesBTN);
+            this.updateTicketRatesTab.Controls.Add(this.label4);
+            this.updateTicketRatesTab.Controls.Add(this.holidayMultiplierTB);
+            this.updateTicketRatesTab.Controls.Add(this.weekdayMultiplierTB);
+            this.updateTicketRatesTab.Controls.Add(this.groupOfTenMultiplierTB);
+            this.updateTicketRatesTab.Controls.Add(this.groupOfFiveMultiplierTB);
+            this.updateTicketRatesTab.Controls.Add(this.unlimitedMultiplierTB);
+            this.updateTicketRatesTab.Controls.Add(this.threeHoursMultiplierTB);
+            this.updateTicketRatesTab.Controls.Add(this.twoHoursMultiplierTB);
+            this.updateTicketRatesTab.Controls.Add(this.adultBaseTicketTB);
+            this.updateTicketRatesTab.Controls.Add(this.childBaseTicketTB);
+            this.updateTicketRatesTab.Controls.Add(this.label9);
+            this.updateTicketRatesTab.Controls.Add(this.label22);
+            this.updateTicketRatesTab.Controls.Add(this.label8);
+            this.updateTicketRatesTab.Controls.Add(this.label7);
+            this.updateTicketRatesTab.Controls.Add(this.label19);
+            this.updateTicketRatesTab.Controls.Add(this.label6);
+            this.updateTicketRatesTab.Controls.Add(this.label5);
+            this.updateTicketRatesTab.Controls.Add(this.label3);
+            this.updateTicketRatesTab.Controls.Add(this.label2);
+            this.updateTicketRatesTab.Controls.Add(this.label1);
+            this.updateTicketRatesTab.Location = new System.Drawing.Point(4, 22);
+            this.updateTicketRatesTab.Name = "updateTicketRatesTab";
+            this.updateTicketRatesTab.Padding = new System.Windows.Forms.Padding(3);
+            this.updateTicketRatesTab.Size = new System.Drawing.Size(768, 486);
+            this.updateTicketRatesTab.TabIndex = 5;
+            this.updateTicketRatesTab.Text = "Login";
+            this.updateTicketRatesTab.UseVisualStyleBackColor = true;
+            // 
+            // ticketRateModifyBarrier
+            // 
+            this.ticketRateModifyBarrier.Controls.Add(this.label51);
+            this.ticketRateModifyBarrier.Controls.Add(this.panel2);
+            this.ticketRateModifyBarrier.Controls.Add(this.label48);
+            this.ticketRateModifyBarrier.Location = new System.Drawing.Point(0, 0);
+            this.ticketRateModifyBarrier.Name = "ticketRateModifyBarrier";
+            this.ticketRateModifyBarrier.Size = new System.Drawing.Size(768, 441);
+            this.ticketRateModifyBarrier.TabIndex = 24;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(185, 53);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(364, 13);
+            this.label51.TabIndex = 3;
+            this.label51.Text = "Login in to make changes to the ticket rates and enter visitor in and out time";
+            // 
+            // panel2
+            // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.loginBTN);
+            this.panel2.Controls.Add(this.passwordTB);
+            this.panel2.Controls.Add(this.label50);
+            this.panel2.Controls.Add(this.usernameTB);
+            this.panel2.Controls.Add(this.label49);
+            this.panel2.Location = new System.Drawing.Point(254, 86);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(256, 113);
+            this.panel2.TabIndex = 2;
+            // 
+            // loginBTN
+            // 
+            this.loginBTN.Location = new System.Drawing.Point(7, 79);
+            this.loginBTN.Name = "loginBTN";
+            this.loginBTN.Size = new System.Drawing.Size(239, 23);
+            this.loginBTN.TabIndex = 3;
+            this.loginBTN.Text = "Login";
+            this.loginBTN.UseVisualStyleBackColor = true;
+            // 
+            // passwordTB
+            // 
+            this.passwordTB.Location = new System.Drawing.Point(65, 40);
+            this.passwordTB.Name = "passwordTB";
+            this.passwordTB.PasswordChar = '●';
+            this.passwordTB.Size = new System.Drawing.Size(181, 20);
+            this.passwordTB.TabIndex = 2;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(4, 43);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(53, 13);
+            this.label50.TabIndex = 1;
+            this.label50.Text = "Password";
+            // 
+            // usernameTB
+            // 
+            this.usernameTB.Location = new System.Drawing.Point(65, 9);
+            this.usernameTB.Name = "usernameTB";
+            this.usernameTB.Size = new System.Drawing.Size(181, 20);
+            this.usernameTB.TabIndex = 2;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(4, 12);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(55, 13);
+            this.label49.TabIndex = 1;
+            this.label49.Text = "Username";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.Location = new System.Drawing.Point(298, 5);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(180, 45);
+            this.label48.TabIndex = 0;
+            this.label48.Text = "User Login";
+            // 
+            // adminImportBtn
+            // 
+            this.adminImportBtn.Location = new System.Drawing.Point(12, 371);
+            this.adminImportBtn.Name = "adminImportBtn";
+            this.adminImportBtn.Size = new System.Drawing.Size(167, 23);
+            this.adminImportBtn.TabIndex = 23;
+            this.adminImportBtn.Text = "Import";
+            this.adminImportBtn.UseVisualStyleBackColor = true;
+            this.adminImportBtn.Click += new System.EventHandler(this.importTicketRatesBTN_Click);
+            // 
+            // saveTicketRatesBTN
+            // 
+            this.saveTicketRatesBTN.Enabled = false;
+            this.saveTicketRatesBTN.Location = new System.Drawing.Point(12, 400);
+            this.saveTicketRatesBTN.Name = "saveTicketRatesBTN";
+            this.saveTicketRatesBTN.Size = new System.Drawing.Size(167, 23);
+            this.saveTicketRatesBTN.TabIndex = 23;
+            this.saveTicketRatesBTN.Text = "Save";
+            this.saveTicketRatesBTN.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 105);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 17);
+            this.label4.TabIndex = 22;
+            this.label4.Text = "Multipliers";
+            // 
+            // holidayMultiplierTB
+            // 
+            this.holidayMultiplierTB.Enabled = false;
+            this.holidayMultiplierTB.Location = new System.Drawing.Point(79, 329);
+            this.holidayMultiplierTB.Name = "holidayMultiplierTB";
+            this.holidayMultiplierTB.Size = new System.Drawing.Size(100, 20);
+            this.holidayMultiplierTB.TabIndex = 21;
+            // 
+            // weekdayMultiplierTB
+            // 
+            this.weekdayMultiplierTB.Enabled = false;
+            this.weekdayMultiplierTB.Location = new System.Drawing.Point(79, 292);
+            this.weekdayMultiplierTB.Name = "weekdayMultiplierTB";
+            this.weekdayMultiplierTB.Size = new System.Drawing.Size(100, 20);
+            this.weekdayMultiplierTB.TabIndex = 19;
+            // 
+            // groupOfTenMultiplierTB
+            // 
+            this.groupOfTenMultiplierTB.Enabled = false;
+            this.groupOfTenMultiplierTB.Location = new System.Drawing.Point(79, 258);
+            this.groupOfTenMultiplierTB.Name = "groupOfTenMultiplierTB";
+            this.groupOfTenMultiplierTB.Size = new System.Drawing.Size(100, 20);
+            this.groupOfTenMultiplierTB.TabIndex = 18;
+            // 
+            // groupOfFiveMultiplierTB
+            // 
+            this.groupOfFiveMultiplierTB.Enabled = false;
+            this.groupOfFiveMultiplierTB.Location = new System.Drawing.Point(79, 230);
+            this.groupOfFiveMultiplierTB.Name = "groupOfFiveMultiplierTB";
+            this.groupOfFiveMultiplierTB.Size = new System.Drawing.Size(100, 20);
+            this.groupOfFiveMultiplierTB.TabIndex = 17;
+            // 
+            // unlimitedMultiplierTB
+            // 
+            this.unlimitedMultiplierTB.Enabled = false;
+            this.unlimitedMultiplierTB.Location = new System.Drawing.Point(79, 197);
+            this.unlimitedMultiplierTB.Name = "unlimitedMultiplierTB";
+            this.unlimitedMultiplierTB.Size = new System.Drawing.Size(100, 20);
+            this.unlimitedMultiplierTB.TabIndex = 16;
+            // 
+            // threeHoursMultiplierTB
+            // 
+            this.threeHoursMultiplierTB.Enabled = false;
+            this.threeHoursMultiplierTB.Location = new System.Drawing.Point(79, 166);
+            this.threeHoursMultiplierTB.Name = "threeHoursMultiplierTB";
+            this.threeHoursMultiplierTB.Size = new System.Drawing.Size(100, 20);
+            this.threeHoursMultiplierTB.TabIndex = 15;
+            // 
+            // twoHoursMultiplierTB
+            // 
+            this.twoHoursMultiplierTB.Enabled = false;
+            this.twoHoursMultiplierTB.Location = new System.Drawing.Point(79, 134);
+            this.twoHoursMultiplierTB.Name = "twoHoursMultiplierTB";
+            this.twoHoursMultiplierTB.Size = new System.Drawing.Size(100, 20);
+            this.twoHoursMultiplierTB.TabIndex = 14;
+            // 
+            // adultBaseTicketTB
+            // 
+            this.adultBaseTicketTB.Enabled = false;
+            this.adultBaseTicketTB.Location = new System.Drawing.Point(79, 65);
+            this.adultBaseTicketTB.Name = "adultBaseTicketTB";
+            this.adultBaseTicketTB.Size = new System.Drawing.Size(100, 20);
+            this.adultBaseTicketTB.TabIndex = 13;
+            // 
+            // childBaseTicketTB
+            // 
+            this.childBaseTicketTB.Enabled = false;
+            this.childBaseTicketTB.Location = new System.Drawing.Point(79, 30);
+            this.childBaseTicketTB.Name = "childBaseTicketTB";
+            this.childBaseTicketTB.Size = new System.Drawing.Size(100, 20);
+            this.childBaseTicketTB.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(9, 329);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 3;
+            this.label9.Text = "Holiday";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(9, 258);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(63, 13);
+            this.label22.TabIndex = 10;
+            this.label22.Text = "Group of 10";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 292);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(58, 13);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Week Day";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 230);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(57, 13);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Group of 5";
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(9, 166);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(66, 13);
+            this.label19.TabIndex = 7;
+            this.label19.Text = "Three Hours";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 197);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(50, 13);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "Unlimited";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 134);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(59, 13);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Two Hours";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 65);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 13);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Adult > 12";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 3);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(140, 17);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Base Ticket Rates";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(9, 30);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Child (5 -12)";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -970,11 +1449,21 @@ namespace Coursework1
             this.Text = "Rec Center MS";
             this.MainTabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.rates.ResumeLayout(false);
             this.rates.PerformLayout();
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage4.ResumeLayout(false);
+            this.tabPage4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.weeklyReportTable)).EndInit();
+            this.updateTicketRatesTab.ResumeLayout(false);
+            this.updateTicketRatesTab.PerformLayout();
+            this.ticketRateModifyBarrier.ResumeLayout(false);
+            this.ticketRateModifyBarrier.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -985,23 +1474,6 @@ namespace Coursework1
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox adultBaseTicketTB;
-        private System.Windows.Forms.TextBox childBaseTicketTB;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button saveTicketRatesBTN;
-        private System.Windows.Forms.TextBox holidayMultiplierTB;
-        private System.Windows.Forms.TextBox weekdayMultiplierTB;
-        private System.Windows.Forms.TextBox groupOfFiveMultiplierTB;
-        private System.Windows.Forms.TextBox unlimitedMultiplierTB;
-        private System.Windows.Forms.TextBox twoHoursMultiplierTB;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel rates;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label16;
@@ -1039,14 +1511,10 @@ namespace Coursework1
         private System.Windows.Forms.Label childGroupTenLBL;
         private System.Windows.Forms.Label adultThreeHourLBL;
         private System.Windows.Forms.Label childThreeHourLBL;
-        private System.Windows.Forms.TextBox groupOfTenMultiplierTB;
-        private System.Windows.Forms.TextBox threeHoursMultiplierTB;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox groupNumberCB;
         private System.Windows.Forms.TextBox visitorIDTB;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TextBox numberOfAdultsTB;
@@ -1054,16 +1522,79 @@ namespace Coursework1
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.ComboBox hoursCB;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker;
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button ImportBTN;
-        private System.Windows.Forms.Button calcTotalBTN;
         private System.Windows.Forms.CheckBox isHolidayCBox;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label TotalLBL;
         private System.Windows.Forms.ProgressBar importVisitorPB;
         private System.Windows.Forms.Label dataImportedStatusLBL;
+        private System.Windows.Forms.Button checkNumberBTN;
+        private System.Windows.Forms.Button saveCustomerBTN;
+        private System.Windows.Forms.ListBox totalList;
+        private System.Windows.Forms.ListBox TotalListBox;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label todayDateLBL;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Button generateDailyReportBTN;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label totalGroupOfTenLBL;
+        private System.Windows.Forms.Label totalGroupOfFiveLBL;
+        private System.Windows.Forms.Label totalAdultLBL;
+        private System.Windows.Forms.Label totalChildrenLBL;
+        private System.Windows.Forms.Label totalEarningLBL;
+        private System.Windows.Forms.Label totalUnlimitedVisits;
+        private System.Windows.Forms.Label totalHoursLBL;
+        private System.Windows.Forms.Label totalVisitorLBL;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Button generateWeeklyReportBTN;
+        private System.Windows.Forms.DataGridView weeklyReportTable;
+        private System.Windows.Forms.DataGridViewTextBoxColumn day;
+        private System.Windows.Forms.DataGridViewTextBoxColumn earning;
+        private System.Windows.Forms.DataGridViewTextBoxColumn visitor;
+        private System.Windows.Forms.Button sortByVisitorsBTN;
+        private System.Windows.Forms.Button sortByEarningBTN;
+        private System.Windows.Forms.TabPage updateTicketRatesTab;
+        private System.Windows.Forms.Button adminImportBtn;
+        private System.Windows.Forms.Button saveTicketRatesBTN;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox holidayMultiplierTB;
+        private System.Windows.Forms.TextBox weekdayMultiplierTB;
+        private System.Windows.Forms.TextBox groupOfTenMultiplierTB;
+        private System.Windows.Forms.TextBox groupOfFiveMultiplierTB;
+        private System.Windows.Forms.TextBox unlimitedMultiplierTB;
+        private System.Windows.Forms.TextBox threeHoursMultiplierTB;
+        private System.Windows.Forms.TextBox twoHoursMultiplierTB;
+        private System.Windows.Forms.TextBox adultBaseTicketTB;
+        private System.Windows.Forms.TextBox childBaseTicketTB;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel ticketRateModifyBarrier;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.TextBox passwordTB;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.TextBox usernameTB;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Button loginBTN;
     }
 }
 
