@@ -23,14 +23,18 @@ namespace Coursework1
 
         private FileReader fileReader; // reads the XML file to import bulk data
 
-        private bool CustomerDetailsImported;
+        private bool CustomerDetailsImported;  // Checks if the customer details have been imported
 
         private List<DayReport> weeklyReport; // Array that will store stats for 7 days
 
-        private bool weeklyReportGenerated;
+        private bool weeklyReportGenerated;  // Checks if the weekly report have been generated
 
+        /// <summary>
+        ///  Constructor
+        /// </summary>
         public Form1()
         {
+            // Initializing all of the values
             importedTicketRates = false;
             checkedGroupNumber = false;
             CustomerList = new List<Customer>();
@@ -41,7 +45,9 @@ namespace Coursework1
             InitializeComponent();
         }
 
-        // Update the fields in ticket rates tab
+        /// <summary>
+        /// Update the fields in ticket rates tab
+        /// </summary>
         private void updateFields()
         {
             // Updating labels to display the ticket rates
@@ -80,7 +86,7 @@ namespace Coursework1
 
         private void importTicketRatesBTN_Click(object sender, EventArgs e)
         {
-            ticketRate = fileReader.ReadTicketPrices();
+            ticketRate = fileReader.ReadTicketPrices(); // Read ticket rates form file
 
             // calling the function to update fields
             updateFields();
@@ -96,6 +102,7 @@ namespace Coursework1
 
         private void saveTicketRatesBTN_Click(object sender, EventArgs e)
         {
+            // check if the ticket rates have been imported
             if (!importedTicketRates)
             {
                 MessageBox.Show("Import Data Before Saving", "Could Not Import", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -188,45 +195,54 @@ namespace Coursework1
                 customer.NumberOfChildren = int.Parse(numberOfChildrenTB.Text);
 
                 // if the customer have selected the unlimited option
-                // 
                 if (hoursCB.Text == "UNLIMITED")
                 {
                     customer.IsUnlimited = true;
-                    customer.Hours = 0;
+                    customer.Hours = 5; // if the customer chooses unlimited a maximum value of 5 hours is saved
                 } else
                 {
                     customer.Hours = int.Parse(hoursCB.Text);
                     customer.IsUnlimited = false;
                 }
 
+                // sets the value of remaining property
                 customer.VisitDate = dateTimePicker.Value;
 
                 customer.IsHoliday = isHolidayCBox.Checked;
 
                 customer.CalculateTotal(ticketRate);
 
-                CustomerList.Add(customer);
+                CustomerList.Add(customer); // add the customer to teh customer list
 
-                fileReader.AppendCustomerData(customer);
+                fileReader.AppendCustomerData(customer); // append the customer to the csv file
 
-                TotalListBox.Items.Add(customer.Total);
+                TotalListBox.Items.Add(customer.Total); // add an entry to a list showing the totals
             } else
             {
+                // if the number of visitors have not been checked 
+                // a message box pops up telling the user to check the number
+                // before saving the data
                 MessageBox.Show("Please Verify Before Proceeding or Import Ticket Rates and Customer Details", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            checkedGroupNumber = false;
+            checkedGroupNumber = false; // reset the value of checked group number
         }
 
+        /// <summary>
+        /// Generates a report for a specific day passed in <c>day</c>
+        /// This is used in generating a weekly report
+        /// </summary>
+        /// <param name="day">The day for which the report needs to be generated</param>
+        /// <returns>a <c>DayReport</c> object with the report for the day</returns>
         private DayReport generateReportForDay(DateTime day)
         {
-            DayReport dayReport = new DayReport();
-            dayReport.Day = day.ToString("dddd");
+            DayReport dayReport = new DayReport(); // declare a new day report object
+            dayReport.Day = day.ToString("dddd"); // get the week day of the passed date
 
+            // fetch all of the entries with the specified date
             foreach (Customer customer in CustomerList)
             {
-                Console.WriteLine($"{customer.VisitDate.ToString()} {day.ToString()}");
                 if (customer.VisitDate.Date == day.Date)
                 {
                     dayReport.TotalEarning += customer.Total;
@@ -239,6 +255,8 @@ namespace Coursework1
 
         private void generateDailyReportBTN_Click(object sender, EventArgs e)
         {
+            // checks if the ticket rates have been imported
+            // and the customer details have been imported in bulk
             if (importedTicketRates && CustomerDetailsImported)
             {
                 DailyReport dailyReport = new DailyReport(); // Daily Report Object
@@ -287,11 +305,17 @@ namespace Coursework1
             }
         }
 
+        /// <summary>
+        /// Updates the Weekly Report Table
+        /// </summary>
         private void UpdateWeeklyStatTable()
         {
-            weeklyReportTable.Rows.Clear();
-            weeklyReportTable.Refresh();
+            // The following lines ensure that the table does not take
+            // duplicate values when the data in the table have been sorted
+            weeklyReportTable.Rows.Clear(); // Clears the collection for the table
+            weeklyReportTable.Refresh(); // Refresh the table
 
+            // Add weekly report in the weekly report table
             foreach (DayReport report in weeklyReport)
             {
                 weeklyReportTable.Rows.Add(new string[] { report.Day, Convert.ToString(report.TotalEarning), Convert.ToString(report.TotalVisitors) });
@@ -300,21 +324,28 @@ namespace Coursework1
 
         private void generateWeeklyReportBTN_Click(object sender, EventArgs e)
         {
-            DateTime today = DateTime.Now;
+            DateTime today = DateTime.Now; // get today's date
+
+            // check if the ticket rate nad customer details have been imported
             if (importedTicketRates && CustomerDetailsImported)
             {
+                // The report for the last seven days will ben generated
                 for (int i = 6; i > -1; i--)
                 {
                     DayReport dayReport = generateReportForDay(today.AddDays(-i));
                     weeklyReport.Add(dayReport);
                 }
 
-                UpdateWeeklyStatTable();
+                UpdateWeeklyStatTable(); // update the table after updating the list
             }
 
-            weeklyReportGenerated = true;
+            weeklyReportGenerated = true; // set the weekly report generated value to true
         }
 
+        /// <summary>
+        /// Use bubble sort algorithm to sort the table by <c>EARNING</c> or <c>Visitors</c>
+        /// </summary>
+        /// <param name="sortBy">Feature to sort by</param>
         private void BubbleSort(string sortBy)
         {
             if (sortBy == "EARNING")
@@ -358,6 +389,7 @@ namespace Coursework1
 
         private void sortByEarningBTN_Click(object sender, EventArgs e)
         {
+            // check if the weekly report have been imported
             if (weeklyReportGenerated)
             {
                 BubbleSort("EARNING");
@@ -369,6 +401,7 @@ namespace Coursework1
 
         private void sortByVisitorsBTN_Click(object sender, EventArgs e)
         {
+            // check if the weekly report have been imported
             if (weeklyReportGenerated)
             {
                 BubbleSort("VISITORS");
@@ -376,6 +409,63 @@ namespace Coursework1
             {
                 MessageBox.Show("Generate weekly report first");
             }
+        }
+
+        /// <summary>
+        /// Enabeling the disabled fields
+        /// </summary>
+        private void enableAdminFields()
+        {
+            childBaseTicketTB.Enabled = true;
+            adultBaseTicketTB.Enabled = true;
+            twoHoursMultiplierTB.Enabled = true;
+            threeHoursMultiplierTB.Enabled = true;
+            unlimitedMultiplierTB.Enabled = true;
+            groupOfFiveMultiplierTB.Enabled = true;
+            groupOfTenMultiplierTB.Enabled = true;
+            weekdayMultiplierTB.Enabled = true;
+            holidayMultiplierTB.Enabled = true;
+            adminImportBtn.Enabled = true;
+            saveTicketRatesBTN.Enabled = true;
+        }
+
+        /// <summary>
+        /// enabeling the fields for entering visitor in and out time.
+        /// </summary>
+        private void enableEmployeeFields()
+        {
+            checkNumberBTN.Enabled = true;
+            saveCustomerBTN.Enabled = true;
+            ImportBTN.Enabled = true;
+            importTicketRatesBTN.Enabled = true;
+        }
+
+        private void loginBTN_Click(object sender, EventArgs e)
+        {
+            List<User> userList = fileReader.readUserList(); // Get the list of user from the file reader
+
+            // iterate through the list
+            foreach(User user in userList)
+            {
+                // checking if the username and password match
+                if (user.Username == usernameTB.Text && user.Password == passwordTB.Text)
+                {
+                    // checking if the user is the admin
+                    if (user.IsAdmin)
+                    {
+                        ticketRateModifyBarrier.Visible = false; // unlocking the ticket rate update form 
+                        enableAdminFields(); // enabeling the fields in the ticket rate update form
+                    }
+
+                    enableEmployeeFields(); // enabeling all employee forms after login
+                    // displaying a message stating that the login was successful
+                    MessageBox.Show("Logged In", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return; // esit checking
+                }
+            }
+
+            // display a message if the username and password was not found
+            MessageBox.Show("Username or Password did not match", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
     }
 }

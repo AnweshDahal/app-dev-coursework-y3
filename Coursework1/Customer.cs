@@ -8,14 +8,50 @@ namespace Coursework1
 {
     public class Customer
     {
+        /// <summary>
+        /// ID of the customer
+        /// </summary>
         public int CustomerID { get; set; }
+
+        /// <summary>
+        /// Total number of people in the group
+        /// </summary>
         public int GroupNumber { get; set; }
+
+        /// <summary>
+        /// Total number of children in the group
+        /// </summary>
         public int NumberOfChildren { get; set; }
+
+        /// <summary>
+        /// Total number of adults in the group
+        /// </summary>
         public int NumberOfAdults { get; set; }
+
+        /// <summary>
+        /// Total hours spent by the group, for a group with unlimited option
+        /// a value of 5 hours is set automatically
+        /// </summary>
         public int Hours { get; set; }
+
+        /// <summary>
+        /// Indicates if the visitor selected the unlimited time option
+        /// </summary>
         public bool IsUnlimited { get; set; }
+
+        /// <summary>
+        /// Date of the visit
+        /// </summary>
         public DateTime VisitDate { get; set; }
+
+        /// <summary>
+        /// Indicates if the visit date was a holiday
+        /// </summary>
         public bool IsHoliday { get; set; }
+
+        /// <summary>
+        /// Total cost of the visit
+        /// </summary>
         public float Total { get; set; }
 
         /// <summary>

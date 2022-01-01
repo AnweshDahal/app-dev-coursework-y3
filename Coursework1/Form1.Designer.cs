@@ -77,7 +77,6 @@ namespace Coursework1
             this.ImportBTN = new System.Windows.Forms.Button();
             this.isHolidayCBox = new System.Windows.Forms.CheckBox();
             this.dateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.label37 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
@@ -90,7 +89,6 @@ namespace Coursework1
             this.label32 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.TotalLBL = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.label46 = new System.Windows.Forms.Label();
@@ -572,6 +570,7 @@ namespace Coursework1
             // 
             // importTicketRatesBTN
             // 
+            this.importTicketRatesBTN.Enabled = false;
             this.importTicketRatesBTN.Location = new System.Drawing.Point(6, 7);
             this.importTicketRatesBTN.Name = "importTicketRatesBTN";
             this.importTicketRatesBTN.Size = new System.Drawing.Size(192, 43);
@@ -590,7 +589,6 @@ namespace Coursework1
             this.tabPage3.Controls.Add(this.ImportBTN);
             this.tabPage3.Controls.Add(this.isHolidayCBox);
             this.tabPage3.Controls.Add(this.dateTimePicker);
-            this.tabPage3.Controls.Add(this.label37);
             this.tabPage3.Controls.Add(this.label36);
             this.tabPage3.Controls.Add(this.label35);
             this.tabPage3.Controls.Add(this.label34);
@@ -603,7 +601,6 @@ namespace Coursework1
             this.tabPage3.Controls.Add(this.label32);
             this.tabPage3.Controls.Add(this.label29);
             this.tabPage3.Controls.Add(this.label23);
-            this.tabPage3.Controls.Add(this.TotalLBL);
             this.tabPage3.Controls.Add(this.label20);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
@@ -624,7 +621,7 @@ namespace Coursework1
             // saveCustomerBTN
             // 
             this.saveCustomerBTN.Enabled = false;
-            this.saveCustomerBTN.Location = new System.Drawing.Point(132, 338);
+            this.saveCustomerBTN.Location = new System.Drawing.Point(132, 298);
             this.saveCustomerBTN.Name = "saveCustomerBTN";
             this.saveCustomerBTN.Size = new System.Drawing.Size(179, 23);
             this.saveCustomerBTN.TabIndex = 10;
@@ -635,7 +632,7 @@ namespace Coursework1
             // checkNumberBTN
             // 
             this.checkNumberBTN.Enabled = false;
-            this.checkNumberBTN.Location = new System.Drawing.Point(51, 338);
+            this.checkNumberBTN.Location = new System.Drawing.Point(51, 298);
             this.checkNumberBTN.Name = "checkNumberBTN";
             this.checkNumberBTN.Size = new System.Drawing.Size(75, 23);
             this.checkNumberBTN.TabIndex = 9;
@@ -675,7 +672,6 @@ namespace Coursework1
             // isHolidayCBox
             // 
             this.isHolidayCBox.AutoSize = true;
-            this.isHolidayCBox.Enabled = false;
             this.isHolidayCBox.Location = new System.Drawing.Point(132, 261);
             this.isHolidayCBox.Name = "isHolidayCBox";
             this.isHolidayCBox.Size = new System.Drawing.Size(72, 17);
@@ -685,20 +681,10 @@ namespace Coursework1
             // 
             // dateTimePicker
             // 
-            this.dateTimePicker.Enabled = false;
             this.dateTimePicker.Location = new System.Drawing.Point(132, 224);
             this.dateTimePicker.Name = "dateTimePicker";
             this.dateTimePicker.Size = new System.Drawing.Size(180, 20);
             this.dateTimePicker.TabIndex = 4;
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(7, 297);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(56, 13);
-            this.label37.TabIndex = 1;
-            this.label37.Text = "Total (Rs.)";
             // 
             // label36
             // 
@@ -729,7 +715,6 @@ namespace Coursework1
             // 
             // numberOfAdultsTB
             // 
-            this.numberOfAdultsTB.Enabled = false;
             this.numberOfAdultsTB.Location = new System.Drawing.Point(132, 151);
             this.numberOfAdultsTB.Name = "numberOfAdultsTB";
             this.numberOfAdultsTB.Size = new System.Drawing.Size(180, 20);
@@ -737,7 +722,6 @@ namespace Coursework1
             // 
             // numberOfChildrenTB
             // 
-            this.numberOfChildrenTB.Enabled = false;
             this.numberOfChildrenTB.Location = new System.Drawing.Point(132, 115);
             this.numberOfChildrenTB.Name = "numberOfChildrenTB";
             this.numberOfChildrenTB.Size = new System.Drawing.Size(180, 20);
@@ -745,7 +729,6 @@ namespace Coursework1
             // 
             // visitorIDTB
             // 
-            this.visitorIDTB.Enabled = false;
             this.visitorIDTB.Location = new System.Drawing.Point(132, 38);
             this.visitorIDTB.Name = "visitorIDTB";
             this.visitorIDTB.Size = new System.Drawing.Size(180, 20);
@@ -762,7 +745,6 @@ namespace Coursework1
             // 
             // hoursCB
             // 
-            this.hoursCB.Enabled = false;
             this.hoursCB.FormattingEnabled = true;
             this.hoursCB.Items.AddRange(new object[] {
             "1",
@@ -777,7 +759,6 @@ namespace Coursework1
             // 
             // groupNumberCB
             // 
-            this.groupNumberCB.Enabled = false;
             this.groupNumberCB.FormattingEnabled = true;
             this.groupNumberCB.Items.AddRange(new object[] {
             "5",
@@ -814,16 +795,6 @@ namespace Coursework1
             this.label23.Size = new System.Drawing.Size(49, 13);
             this.label23.TabIndex = 1;
             this.label23.Text = "Visitor ID";
-            // 
-            // TotalLBL
-            // 
-            this.TotalLBL.AutoSize = true;
-            this.TotalLBL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLBL.Location = new System.Drawing.Point(128, 293);
-            this.TotalLBL.Name = "TotalLBL";
-            this.TotalLBL.Size = new System.Drawing.Size(49, 24);
-            this.TotalLBL.TabIndex = 0;
-            this.TotalLBL.Text = "0.00";
             // 
             // label20
             // 
@@ -1169,7 +1140,7 @@ namespace Coursework1
             this.ticketRateModifyBarrier.Controls.Add(this.label48);
             this.ticketRateModifyBarrier.Location = new System.Drawing.Point(0, 0);
             this.ticketRateModifyBarrier.Name = "ticketRateModifyBarrier";
-            this.ticketRateModifyBarrier.Size = new System.Drawing.Size(768, 441);
+            this.ticketRateModifyBarrier.Size = new System.Drawing.Size(768, 433);
             this.ticketRateModifyBarrier.TabIndex = 24;
             // 
             // label51
@@ -1202,6 +1173,7 @@ namespace Coursework1
             this.loginBTN.TabIndex = 3;
             this.loginBTN.Text = "Login";
             this.loginBTN.UseVisualStyleBackColor = true;
+            this.loginBTN.Click += new System.EventHandler(this.loginBTN_Click);
             // 
             // passwordTB
             // 
@@ -1265,6 +1237,7 @@ namespace Coursework1
             this.saveTicketRatesBTN.TabIndex = 23;
             this.saveTicketRatesBTN.Text = "Save";
             this.saveTicketRatesBTN.UseVisualStyleBackColor = true;
+            this.saveTicketRatesBTN.Click += new System.EventHandler(this.saveTicketRatesBTN_Click);
             // 
             // label4
             // 
@@ -1526,9 +1499,7 @@ namespace Coursework1
         private System.Windows.Forms.Label label35;
         private System.Windows.Forms.Button ImportBTN;
         private System.Windows.Forms.CheckBox isHolidayCBox;
-        private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label TotalLBL;
         private System.Windows.Forms.ProgressBar importVisitorPB;
         private System.Windows.Forms.Label dataImportedStatusLBL;
         private System.Windows.Forms.Button checkNumberBTN;
