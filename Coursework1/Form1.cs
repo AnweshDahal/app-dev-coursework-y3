@@ -322,6 +322,18 @@ namespace Coursework1
             }
         }
 
+        private void UpdateChart()
+        {
+            // Earning Chart
+            earningChart.Titles.Add("Earning Chart");
+            visitorChart.Titles.Add("Visitors Chart");
+            foreach (DayReport dayReport in weeklyReport)
+            {
+                earningChart.Series["Earning"].Points.AddXY(dayReport.Day, dayReport.TotalEarning);
+                visitorChart.Series["Visitors"].Points.AddXY(dayReport.Day, dayReport.TotalVisitors);
+            }
+        }
+
         private void generateWeeklyReportBTN_Click(object sender, EventArgs e)
         {
             DateTime today = DateTime.Now; // get today's date
@@ -338,6 +350,9 @@ namespace Coursework1
 
                 UpdateWeeklyStatTable(); // update the table after updating the list
             }
+
+            // Update the Charts
+            UpdateChart();
 
             weeklyReportGenerated = true; // set the weekly report generated value to true
         }
@@ -467,5 +482,6 @@ namespace Coursework1
             // display a message if the username and password was not found
             MessageBox.Show("Username or Password did not match", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
     }
 }

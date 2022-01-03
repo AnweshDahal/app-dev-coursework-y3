@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <TicketRate xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ChildBaseRate>100</ChildBaseRate>
-  <AdultBaseRate>350</AdultBaseRate>
+  <AdultBaseRate>200</AdultBaseRate>
   <TwoHourMultiplier>1.8</TwoHourMultiplier>
   <ThreeHourMultiplier>2.5</ThreeHourMultiplier>
   <UnlimitedMultiplier>5</UnlimitedMultiplier>

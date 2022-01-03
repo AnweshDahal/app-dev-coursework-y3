@@ -29,6 +29,12 @@ namespace Coursework1
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.MainTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.rates = new System.Windows.Forms.Panel();
@@ -151,6 +157,10 @@ namespace Coursework1
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.earningChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.visitorChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.MainTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.rates.SuspendLayout();
@@ -161,6 +171,10 @@ namespace Coursework1
             this.updateTicketRatesTab.SuspendLayout();
             this.ticketRateModifyBarrier.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.earningChart)).BeginInit();
+            this.tabPage6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.visitorChart)).BeginInit();
             this.SuspendLayout();
             // 
             // MainTabs
@@ -169,6 +183,8 @@ namespace Coursework1
             this.MainTabs.Controls.Add(this.tabPage3);
             this.MainTabs.Controls.Add(this.tabPage2);
             this.MainTabs.Controls.Add(this.tabPage4);
+            this.MainTabs.Controls.Add(this.tabPage5);
+            this.MainTabs.Controls.Add(this.tabPage6);
             this.MainTabs.Controls.Add(this.updateTicketRatesTab);
             this.MainTabs.Location = new System.Drawing.Point(12, 15);
             this.MainTabs.Name = "MainTabs";
@@ -1412,6 +1428,61 @@ namespace Coursework1
             this.label1.TabIndex = 11;
             this.label1.Text = "Child (5 -12)";
             // 
+            // tabPage5
+            // 
+            this.tabPage5.Controls.Add(this.earningChart);
+            this.tabPage5.Location = new System.Drawing.Point(4, 22);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(768, 486);
+            this.tabPage5.TabIndex = 6;
+            this.tabPage5.Text = "Earning Chart";
+            this.tabPage5.UseVisualStyleBackColor = true;
+            // 
+            // earningChart
+            // 
+            chartArea1.Name = "ChartArea1";
+            this.earningChart.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.earningChart.Legends.Add(legend1);
+            this.earningChart.Location = new System.Drawing.Point(6, 6);
+            this.earningChart.Name = "earningChart";
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Earning";
+            this.earningChart.Series.Add(series1);
+            this.earningChart.Size = new System.Drawing.Size(756, 474);
+            this.earningChart.TabIndex = 1;
+            this.earningChart.Text = "chart2";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.visitorChart);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(768, 486);
+            this.tabPage6.TabIndex = 7;
+            this.tabPage6.Text = "Visitor Chart";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // visitorChart
+            // 
+            chartArea2.Name = "ChartArea1";
+            this.visitorChart.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.visitorChart.Legends.Add(legend2);
+            this.visitorChart.Location = new System.Drawing.Point(6, 6);
+            this.visitorChart.Name = "visitorChart";
+            this.visitorChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Visitors";
+            this.visitorChart.Series.Add(series2);
+            this.visitorChart.Size = new System.Drawing.Size(756, 474);
+            this.visitorChart.TabIndex = 2;
+            this.visitorChart.Text = "chart2";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1437,6 +1508,10 @@ namespace Coursework1
             this.ticketRateModifyBarrier.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.tabPage5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.earningChart)).EndInit();
+            this.tabPage6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.visitorChart)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1566,6 +1641,10 @@ namespace Coursework1
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Label label51;
         private System.Windows.Forms.Button loginBTN;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.DataVisualization.Charting.Chart earningChart;
+        private System.Windows.Forms.TabPage tabPage6;
+        private System.Windows.Forms.DataVisualization.Charting.Chart visitorChart;
     }
 }
 
